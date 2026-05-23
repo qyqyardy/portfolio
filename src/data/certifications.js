@@ -6,7 +6,7 @@ export const certifications = [
     date: 'Aug 2025',
     iconClass: 'docker',
     icon: 'fab fa-docker',
-    verifyUrl: null
+    verifyUrl: 'https://www.linkedin.com/learning/certificates/584810701054be1a869761b6f67632bcb69f10212d4f16c952a60efc14d2c1cb'
   },
   {
     id: 'lfs158',
@@ -15,7 +15,7 @@ export const certifications = [
     date: 'Jul 2024',
     iconClass: 'kubernetes',
     icon: 'fas fa-dharmachakra',
-    verifyUrl: null
+    verifyUrl: 'https://www.credly.com/badges/685447b3-d3f2-4ef2-b0b9-0b8ee165262d/linked_in_profile'
   },
   {
     id: 'lfs180',
@@ -24,7 +24,7 @@ export const certifications = [
     date: 'Jul 2024',
     iconClass: 'devsecops',
     icon: 'fas fa-user-shield',
-    verifyUrl: null
+    verifyUrl: 'https://www.credly.com/badges/2cda05f9-eab2-43be-9d5d-59b533bae4b1/linked_in_profile'
   },
   {
     id: 'iso27001',
