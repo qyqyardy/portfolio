@@ -1,0 +1,80 @@
+/* ============================================
+   DESIGN TOKENS — CSS Custom Properties
+   ============================================ */
+
+/* ---------- Dark Theme (Default) ---------- */
+:root {
+  /* Backgrounds */
+  --bg-primary: #060b18;
+  --bg-secondary: #0a0f1c;
+  --bg-tertiary: #0e1530;
+  --bg-card: rgba(14, 21, 48, 0.6);
+  --glass-bg: rgba(14, 21, 48, 0.45);
+  --glass-border: rgba(0, 212, 255, 0.08);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+
+  /* Accent */
+  --accent: #00d4ff;
+  --accent-rgb: 0, 212, 255;
+  --accent-dark: #0099cc;
+  --accent-glow: rgba(0, 212, 255, 0.15);
+  --accent-glow-strong: rgba(0, 212, 255, 0.3);
+  --accent-secondary: #6c3fff;
+  --accent-secondary-rgb: 108, 63, 255;
+
+  /* Text */
+  --text-primary: #e8edf5;
+  --text-secondary: #8892a8;
+  --text-muted: #5a6478;
+
+  /* Gradients */
+  --gradient-accent: linear-gradient(135deg, #00d4ff, #0080ff, #6c3fff);
+  --gradient-card: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(108, 63, 255, 0.03));
+  --gradient-hero-overlay: radial-gradient(ellipse at 30% 50%, rgba(0, 212, 255, 0.06) 0%, transparent 60%),
+                           radial-gradient(ellipse at 70% 80%, rgba(108, 63, 255, 0.04) 0%, transparent 50%);
+
+  /* Typography */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+
+  /* Borders */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* Transitions */
+  --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Spacing */
+  --section-padding: 120px;
+  --container-max: 1200px;
+  --nav-height: 72px;
+}
+
+/* ---------- Light Theme ---------- */
+[data-theme="light"] {
+  --bg-primary: #f5f7fb;
+  --bg-secondary: #edf0f7;
+  --bg-tertiary: #e2e7f0;
+  --bg-card: rgba(255, 255, 255, 0.7);
+  --glass-bg: rgba(255, 255, 255, 0.55);
+  --glass-border: rgba(0, 130, 200, 0.12);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+
+  --accent: #0080ff;
+  --accent-rgb: 0, 128, 255;
+  --accent-dark: #0060cc;
+  --accent-glow: rgba(0, 128, 255, 0.1);
+  --accent-glow-strong: rgba(0, 128, 255, 0.2);
+
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --text-muted: #8892a8;
+
+  --gradient-accent: linear-gradient(135deg, #0080ff, #0050dd, #6c3fff);
+  --gradient-card: linear-gradient(135deg, rgba(0, 128, 255, 0.04), rgba(108, 63, 255, 0.02));
+  --gradient-hero-overlay: radial-gradient(ellipse at 30% 50%, rgba(0, 128, 255, 0.05) 0%, transparent 60%),
+                           radial-gradient(ellipse at 70% 80%, rgba(108, 63, 255, 0.03) 0%, transparent 50%);
+}

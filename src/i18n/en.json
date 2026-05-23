@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "certifications": "Certifications",
+    "contact": "Contact",
+    "hireMe": "Hire Me"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Lazwardi Rizki Assidiq",
+    "available": "Available for Remote Opportunities",
+    "description": "12+ years crafting resilient cloud infrastructure, orchestrating containers at scale, and engineering systems that never sleep.",
+    "viewWork": "View My Work",
+    "downloadCv": "Download CV",
+    "titles": [
+      "System Engineer Lead",
+      "Cloud Infrastructure Architect",
+      "DevOps & SRE Specialist",
+      "Kubernetes Expert"
+    ],
+    "stats": {
+      "years": "Years Experience",
+      "certs": "Certifications",
+      "deploy": "Deploy Time Reduced"
+    },
+    "scrollDown": "Scroll Down"
+  },
+  "about": {
+    "tag": "About Me",
+    "title": "Engineering Infrastructure",
+    "titleHighlight": "at Scale",
+    "description1": "I'm a {role} with over {years} of hands-on experience in the IT industry. My expertise spans across {cloud} (GCP, AWS), {containers} (Docker, Kubernetes), {iac} (Terraform, Ansible), and {sre}.",
+    "description2": "I specialize in designing and managing {hybrid}, leading SRE teams, automating CI/CD pipelines, and implementing security standards including {iso}. My track record includes achieving {zero} and reducing deployment times by up to {percent}.",
+    "description3": "Currently open to {remote} where I can bring my deep infrastructure expertise to impactful projects.",
+    "role": "System Engineer Lead",
+    "years": "12 years",
+    "cloud": "cloud platforms",
+    "containers": "containerization",
+    "iac": "Infrastructure as Code",
+    "sre": "Site Reliability Engineering",
+    "hybrid": "hybrid cloud infrastructure",
+    "iso": "ISO 27001",
+    "zero": "zero-downtime cloud migrations",
+    "percent": "95%",
+    "remote": "remote and global opportunities",
+    "location": "Indonesia",
+    "languages": "EN / ID",
+    "remoteReady": "Remote Ready",
+    "highlights": {
+      "cloud": "Cloud Architecture",
+      "cloudSub": "GCP, AWS, Hybrid",
+      "container": "Container Orchestration",
+      "containerSub": "Docker, K8s, Helm",
+      "security": "Security & Compliance",
+      "securitySub": "ISO 27001, ISMS",
+      "cicd": "CI/CD Automation",
+      "cicdSub": "GitLab, GitHub, Jenkins"
+    },
+    "langProficiency": {
+      "title": "Language Proficiency",
+      "english": "English",
+      "englishLevel": "Intermediate",
+      "indonesian": "Indonesian",
+      "indonesianLevel": "Native"
+    }
+  },
+  "experience": {
+    "tag": "Career Journey",
+    "title": "Professional",
+    "titleHighlight": "Experience",
+    "current": "Current",
+    "education": "Education"
+  },
+  "skills": {
+    "tag": "Tech Stack",
+    "title": "Skills &",
+    "titleHighlight": "Expertise"
+  },
+  "projects": {
+    "tag": "Featured Work",
+    "title": "Project",
+    "titleHighlight": "Highlights",
+    "items": {
+      "nutanix-migration": {
+        "title": "Nutanix Hybrid Cloud Platform",
+        "description": "Led the migration from Proxmox/VMware to Nutanix AHV, including live VM migration, VXLAN networking redesign, and Kubernetes rollout for a digital signature platform."
+      },
+      "gcp-migration": {
+        "title": "Zero-Downtime GCP Migration",
+        "description": "Executed full cloud migration to Google Cloud Platform with zero critical downtime. Automated CI/CD pipelines reducing deployment time by 95%."
+      },
+      "fintech-infra": {
+        "title": "Fintech Remittance Infrastructure",
+        "description": "Designed scalable GCP + Kubernetes architecture for a fintech remittance platform, implementing GitOps workflows and reducing lead time to deploy by 70%."
+      },
+      "gcp-onprem": {
+        "title": "Cloud to On-Premise Migration",
+        "description": "Successfully migrated infrastructure from GCP to on-premise Proxmox VE, optimizing costs while maintaining reliability with centralized monitoring."
+      }
+    }
+  },
+  "certifications": {
+    "tag": "Credentials",
+    "title": "Certifications &",
+    "titleHighlight": "Achievements",
+    "verify": "Verify"
+  },
+  "contact": {
+    "tag": "Get In Touch",
+    "title": "Let's Build",
+    "titleHighlight": "Together",
+    "subtitle": "I'm currently open to remote and global opportunities. Whether you need a cloud architect, DevOps engineer, or SRE lead — let's connect.",
+    "email": "Email",
+    "sendEmail": "Send Email",
+    "connect": "Connect",
+    "viewProfile": "View Profile",
+    "downloadCv": "Download My CV",
+    "downloadCvDesc": "Get a detailed overview of my experience, skills, and certifications in PDF format.",
+    "downloadBtn": "Download CV"
+  },
+  "footer": {
+    "builtBy": "Designed & Built by Lazwardi Rizki Assidiq"
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode"
+  }
+}

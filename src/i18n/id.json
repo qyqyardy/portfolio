@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "experience": "Pengalaman",
+    "skills": "Keahlian",
+    "projects": "Proyek",
+    "certifications": "Sertifikasi",
+    "contact": "Kontak",
+    "hireMe": "Hubungi Saya"
+  },
+  "hero": {
+    "greeting": "Halo, Saya",
+    "name": "Lazwardi Rizki Assidiq",
+    "available": "Terbuka untuk Kesempatan Remote",
+    "description": "12+ tahun merancang infrastruktur cloud yang tangguh, mengorkestrasikan container dalam skala besar, dan membangun sistem yang selalu aktif.",
+    "viewWork": "Lihat Karya Saya",
+    "downloadCv": "Unduh CV",
+    "titles": [
+      "System Engineer Lead",
+      "Cloud Infrastructure Architect",
+      "DevOps & SRE Specialist",
+      "Kubernetes Expert"
+    ],
+    "stats": {
+      "years": "Tahun Pengalaman",
+      "certs": "Sertifikasi",
+      "deploy": "Waktu Deploy Berkurang"
+    },
+    "scrollDown": "Gulir ke Bawah"
+  },
+  "about": {
+    "tag": "Tentang Saya",
+    "title": "Merancang Infrastruktur",
+    "titleHighlight": "dalam Skala Besar",
+    "description1": "Saya seorang {role} dengan lebih dari {years} pengalaman langsung di industri IT. Keahlian saya mencakup {cloud} (GCP, AWS), {containers} (Docker, Kubernetes), {iac} (Terraform, Ansible), dan {sre}.",
+    "description2": "Saya berspesialisasi dalam merancang dan mengelola {hybrid}, memimpin tim SRE, mengotomatiskan pipeline CI/CD, dan menerapkan standar keamanan termasuk {iso}. Rekam jejak saya mencakup pencapaian {zero} dan pengurangan waktu deployment hingga {percent}.",
+    "description3": "Saat ini terbuka untuk {remote} di mana saya dapat membawa keahlian infrastruktur mendalam saya ke proyek-proyek berdampak.",
+    "role": "System Engineer Lead",
+    "years": "12 tahun",
+    "cloud": "platform cloud",
+    "containers": "kontainerisasi",
+    "iac": "Infrastructure as Code",
+    "sre": "Site Reliability Engineering",
+    "hybrid": "infrastruktur hybrid cloud",
+    "iso": "ISO 27001",
+    "zero": "migrasi cloud tanpa downtime",
+    "percent": "95%",
+    "remote": "kesempatan remote dan global",
+    "location": "Indonesia",
+    "languages": "EN / ID",
+    "remoteReady": "Siap Remote",
+    "highlights": {
+      "cloud": "Arsitektur Cloud",
+      "cloudSub": "GCP, AWS, Hybrid",
+      "container": "Orkestrasi Container",
+      "containerSub": "Docker, K8s, Helm",
+      "security": "Keamanan & Kepatuhan",
+      "securitySub": "ISO 27001, ISMS",
+      "cicd": "Otomasi CI/CD",
+      "cicdSub": "GitLab, GitHub, Jenkins"
+    },
+    "langProficiency": {
+      "title": "Kemampuan Bahasa",
+      "english": "Inggris",
+      "englishLevel": "Menengah",
+      "indonesian": "Indonesia",
+      "indonesianLevel": "Bahasa Ibu"
+    }
+  },
+  "experience": {
+    "tag": "Perjalanan Karir",
+    "title": "Pengalaman",
+    "titleHighlight": "Profesional",
+    "current": "Saat Ini",
+    "education": "Pendidikan"
+  },
+  "skills": {
+    "tag": "Tech Stack",
+    "title": "Keahlian &",
+    "titleHighlight": "Kompetensi"
+  },
+  "projects": {
+    "tag": "Karya Unggulan",
+    "title": "Highlight",
+    "titleHighlight": "Proyek",
+    "items": {
+      "nutanix-migration": {
+        "title": "Platform Hybrid Cloud Nutanix",
+        "description": "Memimpin migrasi dari Proxmox/VMware ke Nutanix AHV, termasuk migrasi VM langsung, redesign jaringan VXLAN, dan rollout Kubernetes untuk platform tanda tangan digital."
+      },
+      "gcp-migration": {
+        "title": "Migrasi GCP Tanpa Downtime",
+        "description": "Melaksanakan migrasi cloud penuh ke Google Cloud Platform tanpa downtime kritis. Mengotomatiskan pipeline CI/CD mengurangi waktu deployment sebesar 95%."
+      },
+      "fintech-infra": {
+        "title": "Infrastruktur Fintech Remitansi",
+        "description": "Merancang arsitektur GCP + Kubernetes yang skalabel untuk platform remitansi fintech, menerapkan workflow GitOps dan mengurangi lead time deploy sebesar 70%."
+      },
+      "gcp-onprem": {
+        "title": "Migrasi Cloud ke On-Premise",
+        "description": "Berhasil memigrasi infrastruktur dari GCP ke Proxmox VE on-premise, mengoptimalkan biaya sambil menjaga reliabilitas dengan monitoring terpusat."
+      }
+    }
+  },
+  "certifications": {
+    "tag": "Kredensial",
+    "title": "Sertifikasi &",
+    "titleHighlight": "Pencapaian",
+    "verify": "Verifikasi"
+  },
+  "contact": {
+    "tag": "Hubungi Saya",
+    "title": "Mari Bangun",
+    "titleHighlight": "Bersama",
+    "subtitle": "Saya saat ini terbuka untuk kesempatan remote dan global. Baik Anda membutuhkan cloud architect, DevOps engineer, atau SRE lead — mari terhubung.",
+    "email": "Email",
+    "sendEmail": "Kirim Email",
+    "connect": "Terhubung",
+    "viewProfile": "Lihat Profil",
+    "downloadCv": "Unduh CV Saya",
+    "downloadCvDesc": "Dapatkan gambaran detail pengalaman, keahlian, dan sertifikasi saya dalam format PDF.",
+    "downloadBtn": "Unduh CV"
+  },
+  "footer": {
+    "builtBy": "Dirancang & Dibangun oleh Lazwardi Rizki Assidiq"
+  },
+  "theme": {
+    "dark": "Mode Gelap",
+    "light": "Mode Terang"
+  }
+}
