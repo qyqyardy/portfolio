@@ -13,7 +13,7 @@
         </span>
       </h1>
       <div class="hero-titles">
-        <TypeWriter :texts="$t('hero.titles')" :speed="60" :deleteSpeed="30" :pauseTime="2500" />
+        <TypeWriter :texts="$tm('hero.titles')" :speed="60" :deleteSpeed="30" :pauseTime="2500" />
       </div>
       <p class="hero-description">{{ $t('hero.description') }}</p>
       <div class="hero-actions">
