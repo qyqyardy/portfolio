@@ -1,11 +1,27 @@
 export const experiences = [
   {
+    id: 'stealth',
+    role: 'Information Technology Manager',
+    company: 'Stealth Startup',
+    period: 'Mar 2026 — Present',
+    icon: 'fa-star',
+    isCurrent: true,
+    details: [
+      'Lead end-to-end IT strategy at a fast-growing tech startup, where technology is the backbone of the business.',
+      'Design hybrid cloud environments across GCP, AWS, Nutanix AHV/Prism, and on-premise infrastructure. Lead migrations — VMware to Nutanix, GCP to Proxmox — with near-zero downtime.',
+      'Head of ISMS. Drive full ISO/IEC 27001:2022 implementation, internal auditing, and PKI/cryptographic systems including EJBCA for certificate lifecycle management.',
+      'Architect CI/CD pipelines (GitLab CI, GitHub Actions, Jenkins) — cutting deployment time by 65% and downtime by 90%. Champion of GitOps, Kubernetes, Terraform & Ansible.',
+      'Build full observability stacks with Prometheus, Grafana, Loki & ELK for real-time monitoring and SLA-driven incident response.',
+      'Lead cross-functional IT & SRE teams. Align infrastructure roadmaps with C-level business goals, compliance needs, and growth ambitions.'
+    ],
+    tags: ['GCP', 'AWS', 'Kubernetes', 'Terraform', 'ISO 27001', 'GitOps']
+  },
+  {
     id: 'tilaka',
     role: 'System Engineer Lead',
     company: 'Tilaka Nusa Teknologi',
-    period: 'Sep 2025 — Present',
-    icon: 'fa-star',
-    isCurrent: true,
+    period: 'Sep 2025 — Feb 2026',
+    icon: 'fa-server',
     details: [
       'Lead the design and operations of hybrid cloud infrastructure for a leading digital signature and identity verification platform, integrating Nutanix AHV/Prism, Nutanix Kubernetes clusters, and on-premises workloads.',
       'Spearhead migration projects from Proxmox/VMware to Nutanix, ensuring scalability, security, and high performance.',

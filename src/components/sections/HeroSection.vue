@@ -61,7 +61,7 @@
             <div class="stats-grid">
               <div class="stat-item">
                 <div class="stat-value">
-                  <AnimatedCounter :target="12" /><span class="stat-plus gradient-text">+</span>
+                  <AnimatedCounter :target="10" /><span class="stat-plus gradient-text">+</span>
                 </div>
                 <span class="stat-label">{{ $t('hero.stats.years') }}</span>
               </div>

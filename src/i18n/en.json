@@ -13,14 +13,14 @@
     "greeting": "Hello, I'm",
     "name": "Lazwardi Rizki Assidiq",
     "available": "Available for Remote Opportunities",
-    "description": "12+ years crafting resilient cloud infrastructure, orchestrating containers at scale, and engineering systems that never sleep.",
+    "description": "10+ years in IT infrastructure, cloud engineering, SRE, and information security — leading end-to-end IT strategy and building systems that scale.",
     "viewWork": "View My Work",
     "downloadCv": "Download CV",
     "titles": [
-      "System Engineer Lead",
-      "Cloud Infrastructure Architect",
-      "DevOps & SRE Specialist",
-      "Kubernetes Expert"
+      "IT Manager",
+      "Cloud & DevOps Engineer",
+      "SRE Specialist",
+      "ISO 27001 Practitioner"
     ],
     "stats": {
       "years": "Years Experience",
@@ -36,8 +36,8 @@
     "description1": "I'm a {role} with over {years} of hands-on experience in the IT industry. My expertise spans across {cloud} (GCP, AWS), {containers} (Docker, Kubernetes), {iac} (Terraform, Ansible), and {sre}.",
     "description2": "I specialize in designing and managing {hybrid}, leading SRE teams, automating CI/CD pipelines, and implementing security standards including {iso}. My track record includes achieving {zero} and reducing deployment times by up to {percent}.",
     "description3": "Currently open to {remote} where I can bring my deep infrastructure expertise to impactful projects.",
-    "role": "System Engineer Lead",
-    "years": "12 years",
+    "role": "IT Manager & Cloud Engineer",
+    "years": "10 years",
     "cloud": "cloud platforms",
     "containers": "containerization",
     "iac": "Infrastructure as Code",

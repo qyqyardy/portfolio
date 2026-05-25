@@ -13,14 +13,14 @@
     "greeting": "Halo, Saya",
     "name": "Lazwardi Rizki Assidiq",
     "available": "Terbuka untuk Kesempatan Remote",
-    "description": "12+ tahun merancang infrastruktur cloud yang tangguh, mengorkestrasikan container dalam skala besar, dan membangun sistem yang selalu aktif.",
+    "description": "10+ tahun di infrastruktur IT, cloud engineering, SRE, dan keamanan informasi — memimpin strategi IT end-to-end dan membangun sistem yang scalable.",
     "viewWork": "Lihat Karya Saya",
     "downloadCv": "Unduh CV",
     "titles": [
-      "System Engineer Lead",
-      "Cloud Infrastructure Architect",
-      "DevOps & SRE Specialist",
-      "Kubernetes Expert"
+      "IT Manager",
+      "Cloud & DevOps Engineer",
+      "SRE Specialist",
+      "ISO 27001 Practitioner"
     ],
     "stats": {
       "years": "Tahun Pengalaman",
@@ -36,8 +36,8 @@
     "description1": "Saya seorang {role} dengan lebih dari {years} pengalaman langsung di industri IT. Keahlian saya mencakup {cloud} (GCP, AWS), {containers} (Docker, Kubernetes), {iac} (Terraform, Ansible), dan {sre}.",
     "description2": "Saya berspesialisasi dalam merancang dan mengelola {hybrid}, memimpin tim SRE, mengotomatiskan pipeline CI/CD, dan menerapkan standar keamanan termasuk {iso}. Rekam jejak saya mencakup pencapaian {zero} dan pengurangan waktu deployment hingga {percent}.",
     "description3": "Saat ini terbuka untuk {remote} di mana saya dapat membawa keahlian infrastruktur mendalam saya ke proyek-proyek berdampak.",
-    "role": "System Engineer Lead",
-    "years": "12 tahun",
+    "role": "IT Manager & Cloud Engineer",
+    "years": "10 tahun",
     "cloud": "platform cloud",
     "containers": "kontainerisasi",
     "iac": "Infrastructure as Code",
