@@ -20,7 +20,7 @@ export const experiences = [
     id: 'tilaka',
     role: 'System Engineer Lead',
     company: 'Tilaka Nusa Teknologi',
-    period: 'Sep 2025 — Feb 2026',
+    period: 'Sep 2025 — Mar 2026',
     icon: 'fa-server',
     details: [
       'Lead the design and operations of hybrid cloud infrastructure for a leading digital signature and identity verification platform, integrating Nutanix AHV/Prism, Nutanix Kubernetes clusters, and on-premises workloads.',
