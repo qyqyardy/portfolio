@@ -44,6 +44,128 @@
   100% { background-position: 200% center; }
 }
 
+/* ---------- Bento / Premium Animations ---------- */
+
+/* Gradient mesh animation for hero background */
+@keyframes mesh-shift {
+  0% {
+    background-position: 0% 50%, 100% 50%, 50% 100%;
+  }
+  25% {
+    background-position: 100% 25%, 0% 75%, 75% 0%;
+  }
+  50% {
+    background-position: 50% 100%, 50% 0%, 0% 50%;
+  }
+  75% {
+    background-position: 25% 0%, 75% 100%, 100% 75%;
+  }
+  100% {
+    background-position: 0% 50%, 100% 50%, 50% 100%;
+  }
+}
+
+/* Staggered card entrance */
+@keyframes bento-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Glow pulse for accent elements */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(var(--accent-rgb), 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(var(--accent-rgb), 0.4);
+  }
+}
+
+/* Animated gradient border rotation */
+@keyframes gradient-rotate {
+  0% { --gradient-angle: 0deg; }
+  100% { --gradient-angle: 360deg; }
+}
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Marquee infinite scroll */
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Subtle float for cards */
+@keyframes gentle-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Floating tech icons in hero */
+@keyframes float-icon-1 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(15px, -20px) rotate(5deg); }
+  50% { transform: translate(-5px, -35px) rotate(-3deg); }
+  75% { transform: translate(-15px, -15px) rotate(4deg); }
+}
+
+@keyframes float-icon-2 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(-20px, -10px) rotate(-5deg); }
+  50% { transform: translate(10px, -25px) rotate(3deg); }
+  75% { transform: translate(20px, -5px) rotate(-4deg); }
+}
+
+@keyframes float-icon-3 {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(10px, -30px) rotate(3deg); }
+  50% { transform: translate(-15px, -15px) rotate(-5deg); }
+  75% { transform: translate(5px, -25px) rotate(2deg); }
+}
+
+/* Scale pop on interaction */
+@keyframes scale-pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+/* Hero illustration float */
+@keyframes hero-float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-12px) scale(1.01); }
+}
+
+/* Noise grain animation */
+@keyframes noise-shift {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 35%); }
+  90% { transform: translate(-10%, 10%); }
+}
+
+/* Dot grid pulse */
+@keyframes dot-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
 /* ---------- Vue Transitions ---------- */
 .fade-enter-active,
 .fade-leave-active {
@@ -68,6 +190,26 @@
 .slide-up-leave-to {
   opacity: 0;
   transform: translateY(-10px);
+}
+
+/* Expand/collapse transition */
+.expand-enter-active,
+.expand-leave-active {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.expand-enter-from,
+.expand-leave-to {
+  opacity: 0;
+  max-height: 0;
+  padding-top: 0;
+}
+
+.expand-enter-to,
+.expand-leave-from {
+  max-height: 600px;
+  opacity: 1;
 }
 
 /* ---------- AOS Override ---------- */

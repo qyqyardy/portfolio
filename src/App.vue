@@ -30,22 +30,26 @@ import CertificationsSection from './components/sections/CertificationsSection.v
 import ContactSection from './components/sections/ContactSection.vue'
 
 import { useTheme } from './composables/useTheme'
+import { useCursorGlow } from './composables/useCursorGlow'
 
 // Initialize theme
 useTheme()
 
+// Initialize cursor glow effect on all bento cards
+useCursorGlow()
+
 onMounted(() => {
   AOS.init({
-    duration: 700,
+    duration: 800,
     easing: 'ease-out-cubic',
     once: true,
-    offset: 80,
+    offset: 60,
     disable: 'mobile'
   })
 
   // Smooth entrance
   document.body.style.opacity = '0'
-  document.body.style.transition = 'opacity 0.5s ease'
+  document.body.style.transition = 'opacity 0.6s ease'
   requestAnimationFrame(() => {
     document.body.style.opacity = '1'
   })

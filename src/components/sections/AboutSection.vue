@@ -7,35 +7,23 @@
         :title="$t('about.title')"
         :highlight="$t('about.titleHighlight')"
       />
-      <div class="about-grid">
-        <div class="about-visual" data-aos="fade-right" data-aos-duration="800">
-          <div class="about-avatar-card">
-            <div class="avatar-icon-wrapper">
-              <i class="fas fa-server"></i>
-            </div>
-            <div class="avatar-orbit">
-              <div class="orbit-item orbit-1"><i class="fab fa-docker"></i></div>
-              <div class="orbit-item orbit-2"><i class="fab fa-aws"></i></div>
-              <div class="orbit-item orbit-3"><i class="fab fa-google"></i></div>
-              <div class="orbit-item orbit-4"><i class="fab fa-linux"></i></div>
-            </div>
+      <div class="about-bento">
+        <!-- Avatar Card with Image -->
+        <div class="bento-card bento-card--gradient-border about-avatar-bento" data-aos="fade-up" data-aos-delay="0">
+          <div class="avatar-image-wrapper">
+            <img :src="avatarImage" alt="Lazwardi Rizki Assidiq" class="avatar-image" />
+            <div class="avatar-glow"></div>
           </div>
-          <div class="about-info-cards">
-            <div class="info-card glass-card">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>{{ $t('about.location') }}</span>
-            </div>
-            <div class="info-card glass-card">
-              <i class="fas fa-language"></i>
-              <span>{{ $t('about.languages') }}</span>
-            </div>
-            <div class="info-card glass-card">
-              <i class="fas fa-globe"></i>
-              <span>{{ $t('about.remoteReady') }}</span>
-            </div>
+          <div class="avatar-orbit-icons">
+            <div class="orbit-icon oi-1"><i class="fab fa-docker"></i></div>
+            <div class="orbit-icon oi-2"><i class="fab fa-aws"></i></div>
+            <div class="orbit-icon oi-3"><i class="fab fa-google"></i></div>
+            <div class="orbit-icon oi-4"><i class="fab fa-linux"></i></div>
           </div>
         </div>
-        <div class="about-content" data-aos="fade-left" data-aos-duration="800">
+
+        <!-- About Text Card -->
+        <div class="bento-card about-text-bento" data-aos="fade-up" data-aos-delay="100">
           <p class="about-text">
             {{ $t('about.description1', {
               role: $t('about.role'),
@@ -54,56 +42,59 @@
               percent: $t('about.percent')
             }) }}
           </p>
-          <p class="about-text">
+          <p class="about-text about-text--last">
             {{ $t('about.description3', { remote: $t('about.remote') }) }}
           </p>
+        </div>
+
+        <!-- Small info cards -->
+        <div class="bento-card bento-card--compact about-info-bento" data-aos="fade-up" data-aos-delay="150">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>{{ $t('about.location') }}</span>
+        </div>
+
+        <div class="bento-card bento-card--compact about-info-bento" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-language"></i>
+          <span>{{ $t('about.languages') }}</span>
+        </div>
+
+        <div class="bento-card bento-card--compact about-info-bento" data-aos="fade-up" data-aos-delay="250">
+          <i class="fas fa-globe"></i>
+          <span>{{ $t('about.remoteReady') }}</span>
+        </div>
+
+        <!-- Highlights Grid Card -->
+        <div class="bento-card about-highlights-bento" data-aos="fade-up" data-aos-delay="200">
           <div class="about-highlights">
-            <div class="highlight-item glass-card">
-              <i class="fas fa-cloud"></i>
+            <div class="highlight-item" v-for="(h, i) in highlights" :key="i">
+              <div class="highlight-icon"><i :class="h.icon"></i></div>
               <div>
-                <strong>{{ $t('about.highlights.cloud') }}</strong>
-                <span>{{ $t('about.highlights.cloudSub') }}</span>
-              </div>
-            </div>
-            <div class="highlight-item glass-card">
-              <i class="fas fa-dharmachakra"></i>
-              <div>
-                <strong>{{ $t('about.highlights.container') }}</strong>
-                <span>{{ $t('about.highlights.containerSub') }}</span>
-              </div>
-            </div>
-            <div class="highlight-item glass-card">
-              <i class="fas fa-shield-alt"></i>
-              <div>
-                <strong>{{ $t('about.highlights.security') }}</strong>
-                <span>{{ $t('about.highlights.securitySub') }}</span>
-              </div>
-            </div>
-            <div class="highlight-item glass-card">
-              <i class="fas fa-rocket"></i>
-              <div>
-                <strong>{{ $t('about.highlights.cicd') }}</strong>
-                <span>{{ $t('about.highlights.cicdSub') }}</span>
+                <strong>{{ $t(h.titleKey) }}</strong>
+                <span>{{ $t(h.subKey) }}</span>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Language Proficiency -->
-          <div class="lang-proficiency" data-aos="fade-up">
-            <h4 class="lang-proficiency__title">
-              <i class="fas fa-language"></i> {{ $t('about.langProficiency.title') }}
-            </h4>
-            <div class="lang-proficiency__items">
-              <div class="lang-item glass-card">
+        <!-- Language Proficiency Card -->
+        <div class="bento-card about-lang-bento" data-aos="fade-up" data-aos-delay="250">
+          <h4 class="lang-title">
+            <i class="fas fa-language"></i> {{ $t('about.langProficiency.title') }}
+          </h4>
+          <div class="lang-items">
+            <div class="lang-item">
+              <div class="lang-meta">
                 <span class="lang-name">{{ $t('about.langProficiency.english') }}</span>
                 <span class="lang-level">{{ $t('about.langProficiency.englishLevel') }}</span>
-                <div class="lang-bar"><div class="lang-bar__fill" style="width: 70%"></div></div>
               </div>
-              <div class="lang-item glass-card">
+              <div class="lang-bar"><div class="lang-bar__fill lang-bar__fill--animated" data-width="70"></div></div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-meta">
                 <span class="lang-name">{{ $t('about.langProficiency.indonesian') }}</span>
                 <span class="lang-level">{{ $t('about.langProficiency.indonesianLevel') }}</span>
-                <div class="lang-bar"><div class="lang-bar__fill" style="width: 100%"></div></div>
               </div>
+              <div class="lang-bar"><div class="lang-bar__fill lang-bar__fill--animated" data-width="100"></div></div>
             </div>
           </div>
         </div>
@@ -113,104 +104,165 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
 import SectionHeader from '../ui/SectionHeader.vue'
+import avatarImage from '../../assets/about-avatar.png'
+
+const highlights = [
+  { icon: 'fas fa-cloud', titleKey: 'about.highlights.cloud', subKey: 'about.highlights.cloudSub' },
+  { icon: 'fas fa-dharmachakra', titleKey: 'about.highlights.container', subKey: 'about.highlights.containerSub' },
+  { icon: 'fas fa-shield-alt', titleKey: 'about.highlights.security', subKey: 'about.highlights.securitySub' },
+  { icon: 'fas fa-rocket', titleKey: 'about.highlights.cicd', subKey: 'about.highlights.cicdSub' }
+]
+
+// Animate language bars when visible
+onMounted(() => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const bars = entry.target.querySelectorAll('.lang-bar__fill--animated')
+        bars.forEach(bar => {
+          bar.style.width = bar.dataset.width + '%'
+        })
+        observer.unobserve(entry.target)
+      }
+    })
+  }, { threshold: 0.3 })
+
+  const langSection = document.querySelector('.about-lang-bento')
+  if (langSection) observer.observe(langSection)
+})
 </script>
 
 <style scoped>
-.about-grid {
+/* Bento Grid Layout */
+.about-bento {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 64px;
-  align-items: center;
+  grid-template-columns: 340px 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: var(--bento-gap);
 }
 
-/* Avatar & Orbit */
-.about-avatar-card {
-  position: relative;
-  width: 260px;
-  height: 260px;
-  margin: 0 auto 32px;
+/* Avatar card — top left, spans 2 rows */
+.about-avatar-bento {
+  grid-column: 1;
+  grid-row: 1 / 3;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 360px;
+  position: relative;
 }
 
-.avatar-icon-wrapper {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  background: var(--gradient-accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3.5rem;
-  color: #fff;
-  box-shadow: 0 0 60px rgba(var(--accent-rgb), 0.25);
+/* Avatar Image */
+.avatar-image-wrapper {
   position: relative;
+  width: 220px;
+  height: 220px;
   z-index: 2;
 }
 
-.avatar-orbit {
-  position: absolute;
-  inset: 0;
-  animation: orbit-spin 20s linear infinite;
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  border-radius: 50%;
+  border: 3px solid rgba(var(--accent-rgb), 0.25);
+  box-shadow: 0 0 40px rgba(var(--accent-rgb), 0.15),
+              0 8px 32px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+  filter: brightness(1.05) contrast(1.05);
 }
 
-.orbit-item {
+.avatar-glow {
   position: absolute;
-  width: 48px;
-  height: 48px;
+  inset: -12px;
   border-radius: 50%;
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
+  background: var(--gradient-accent);
+  opacity: 0.12;
+  filter: blur(20px);
+  z-index: 1;
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+/* Orbit tech icons around avatar */
+.avatar-orbit-icons {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbit-spin 25s linear infinite;
+}
+
+.orbit-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--bento-card-bg);
+  border: 1px solid var(--bento-card-border);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--accent);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.orbit-1 { top: 0; left: 50%; transform: translateX(-50%); animation: ocs1 20s linear infinite; }
-.orbit-2 { top: 50%; right: 0; transform: translateY(-50%); animation: ocs2 20s linear infinite; }
-.orbit-3 { bottom: 0; left: 50%; transform: translateX(-50%); animation: ocs3 20s linear infinite; }
-.orbit-4 { top: 50%; left: 0; transform: translateY(-50%); animation: ocs4 20s linear infinite; }
+.oi-1 { top: 0; left: 50%; transform: translateX(-50%); animation: ocs1 25s linear infinite; }
+.oi-2 { top: 50%; right: 0; transform: translateY(-50%); animation: ocs2 25s linear infinite; }
+.oi-3 { bottom: 0; left: 50%; transform: translateX(-50%); animation: ocs3 25s linear infinite; }
+.oi-4 { top: 50%; left: 0; transform: translateY(-50%); animation: ocs4 25s linear infinite; }
 
 @keyframes ocs1 { from { transform: translateX(-50%) rotate(0deg); } to { transform: translateX(-50%) rotate(-360deg); } }
 @keyframes ocs2 { from { transform: translateY(-50%) rotate(0deg); } to { transform: translateY(-50%) rotate(-360deg); } }
 @keyframes ocs3 { from { transform: translateX(-50%) rotate(0deg); } to { transform: translateX(-50%) rotate(-360deg); } }
 @keyframes ocs4 { from { transform: translateY(-50%) rotate(0deg); } to { transform: translateY(-50%) rotate(-360deg); } }
 
-/* Info Cards */
-.about-info-cards {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
+/* Text card */
+.about-text-bento {
+  grid-column: 2;
+  grid-row: 1 / 2;
 }
 
-.info-card {
+/* Info cards */
+.about-info-bento {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 18px;
-  font-size: 0.85rem;
+  gap: 10px;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-secondary);
-  border-radius: var(--radius-md);
 }
 
-.info-card i {
+.about-info-bento i {
   color: var(--accent);
-  font-size: 0.9rem;
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
 }
 
-.info-card:hover {
-  transform: translateY(-2px);
+.about-info-bento:nth-of-type(3) {
+  grid-column: 2;
+  grid-row: 2 / 3;
 }
 
-/* Text Content */
+/* Highlights card — full width */
+.about-highlights-bento {
+  grid-column: 1 / -1;
+}
+
+/* Language card — full width */
+.about-lang-bento {
+  grid-column: 1 / -1;
+}
+
+/* Text */
 .about-text {
   font-size: 1rem;
   color: var(--text-secondary);
@@ -218,52 +270,70 @@ import SectionHeader from '../ui/SectionHeader.vue'
   line-height: 1.8;
 }
 
+.about-text--last {
+  margin-bottom: 0;
+}
+
 /* Highlights */
 .about-highlights {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 16px;
-  margin-top: 32px;
 }
 
 .highlight-item {
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 20px;
+  gap: 14px;
+  padding: 16px;
   border-radius: var(--radius-md);
+  background: rgba(var(--accent-rgb), 0.03);
+  border: 1px solid rgba(var(--accent-rgb), 0.06);
+  transition: var(--transition);
 }
 
-.highlight-item i {
-  font-size: 1.5rem;
+.highlight-item:hover {
+  background: rgba(var(--accent-rgb), 0.06);
+  border-color: rgba(var(--accent-rgb), 0.12);
+  transform: translateY(-2px);
+}
+
+.highlight-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  background: rgba(var(--accent-rgb), 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
   color: var(--accent);
   flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.highlight-item:hover .highlight-icon {
+  background: var(--gradient-accent);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(var(--accent-rgb), 0.3);
 }
 
 .highlight-item strong {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-primary);
   margin-bottom: 2px;
 }
 
 .highlight-item span {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
 }
 
-.highlight-item:hover {
-  transform: translateY(-3px);
-}
-
 /* Language Proficiency */
-.lang-proficiency {
-  margin-top: 32px;
-}
-
-.lang-proficiency__title {
+.lang-title {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 16px;
@@ -272,19 +342,23 @@ import SectionHeader from '../ui/SectionHeader.vue'
   gap: 8px;
 }
 
-.lang-proficiency__title i {
+.lang-title i {
   color: var(--accent);
 }
 
-.lang-proficiency__items {
+.lang-items {
   display: flex;
-  gap: 12px;
+  gap: 24px;
 }
 
 .lang-item {
   flex: 1;
-  padding: 16px 20px;
-  border-radius: var(--radius-md);
+}
+
+.lang-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
 }
 
 .lang-name {
@@ -294,10 +368,8 @@ import SectionHeader from '../ui/SectionHeader.vue'
 }
 
 .lang-level {
-  display: block;
   font-size: 0.8rem;
   color: var(--text-muted);
-  margin-bottom: 8px;
 }
 
 .lang-bar {
@@ -311,52 +383,70 @@ import SectionHeader from '../ui/SectionHeader.vue'
   height: 100%;
   background: var(--gradient-accent);
   border-radius: 4px;
-  transition: width 1s ease;
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lang-bar__fill--animated {
+  width: 0;
 }
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 48px;
+  .about-bento {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
   }
 
-  .about-visual {
-    order: -1;
+  .about-avatar-bento {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    min-height: auto;
+    padding: 40px;
+  }
+
+  .about-text-bento {
+    grid-column: 1 / -1;
+  }
+
+  .about-info-bento:nth-of-type(3) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 768px) {
+  .about-bento {
+    grid-template-columns: 1fr;
+  }
+
+  .avatar-image-wrapper {
+    width: 160px;
+    height: 160px;
+  }
+
+  .avatar-orbit-icons {
+    width: 230px;
+    height: 230px;
+  }
+
+  .orbit-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 0.85rem;
+    border-radius: 10px;
+  }
+
   .about-highlights {
     grid-template-columns: 1fr;
   }
 
-  .about-avatar-card {
-    width: 200px;
-    height: 200px;
-  }
-
-  .avatar-icon-wrapper {
-    width: 100px;
-    height: 100px;
-    font-size: 2.5rem;
-  }
-
-  .orbit-item {
-    width: 38px;
-    height: 38px;
-    font-size: 0.9rem;
-  }
-
-  .lang-proficiency__items {
+  .lang-items {
     flex-direction: column;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-info-cards {
-    flex-direction: column;
-    align-items: center;
+    gap: 16px;
   }
 }
 </style>

@@ -103,16 +103,16 @@ onUnmounted(() => {
 }
 
 .navbar.scrolled {
-  padding: 10px 0;
-  background: rgba(6, 11, 24, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  padding: 8px 0;
+  background: rgba(6, 11, 24, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   border-bottom: 1px solid var(--glass-border);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2), inset 0 -1px 0 rgba(var(--accent-rgb), 0.04);
 }
 
 [data-theme="light"] .navbar.scrolled {
-  background: rgba(245, 247, 251, 0.85);
+  background: rgba(245, 247, 251, 0.8);
 }
 
 .nav-container {
@@ -126,11 +126,16 @@ onUnmounted(() => {
 
 .nav-logo {
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--text-primary);
   letter-spacing: -0.5px;
   text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.nav-logo:hover {
+  opacity: 0.8;
 }
 
 .logo-bracket {
@@ -139,15 +144,15 @@ onUnmounted(() => {
 
 .nav-menu {
   display: flex;
-  gap: 8px;
+  gap: 4px;
   list-style: none;
 }
 
 .nav-link {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: var(--text-secondary);
-  padding: 8px 16px;
+  padding: 8px 14px;
   border-radius: var(--radius-sm);
   position: relative;
   transition: var(--transition-fast);
@@ -167,27 +172,27 @@ onUnmounted(() => {
 .nav-controls {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .nav-cta {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 22px;
+  padding: 9px 20px;
   background: var(--gradient-accent);
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 600;
   border-radius: var(--radius-md);
-  box-shadow: 0 4px 15px rgba(var(--accent-rgb), 0.3);
+  box-shadow: 0 4px 15px rgba(var(--accent-rgb), 0.25);
   transition: var(--transition);
   text-decoration: none;
 }
 
 .nav-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(var(--accent-rgb), 0.4);
+  box-shadow: 0 6px 25px rgba(var(--accent-rgb), 0.35);
 }
 
 .nav-toggle {

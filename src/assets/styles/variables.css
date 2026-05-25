@@ -33,6 +33,19 @@
   --gradient-hero-overlay: radial-gradient(ellipse at 30% 50%, rgba(0, 212, 255, 0.06) 0%, transparent 60%),
                            radial-gradient(ellipse at 70% 80%, rgba(108, 63, 255, 0.04) 0%, transparent 50%);
 
+  /* Mesh Gradient */
+  --mesh-color-1: rgba(0, 212, 255, 0.07);
+  --mesh-color-2: rgba(108, 63, 255, 0.05);
+  --mesh-color-3: rgba(0, 128, 255, 0.04);
+
+  /* Dot grid */
+  --dot-color: rgba(0, 212, 255, 0.08);
+  --dot-size: 1px;
+  --dot-spacing: 32px;
+
+  /* Noise texture */
+  --noise-opacity: 0.03;
+
   /* Typography */
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: 'Space Grotesk', 'Inter', sans-serif;
@@ -48,9 +61,22 @@
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Spacing */
-  --section-padding: 120px;
+  --section-padding: 100px;
   --container-max: 1200px;
   --nav-height: 72px;
+
+  /* Bento Grid Tokens */
+  --bento-gap: 16px;
+  --bento-radius: 24px;
+  --bento-padding: 28px;
+  --bento-card-bg: rgba(14, 21, 48, 0.5);
+  --bento-card-border: rgba(0, 212, 255, 0.06);
+  --bento-card-hover-border: rgba(0, 212, 255, 0.2);
+  --bento-card-hover-glow: 0 0 40px rgba(0, 212, 255, 0.08), 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  /* Cursor glow */
+  --cursor-glow-size: 300px;
+  --cursor-glow-opacity: 0.06;
 }
 
 /* ---------- Light Theme ---------- */
@@ -77,4 +103,24 @@
   --gradient-card: linear-gradient(135deg, rgba(0, 128, 255, 0.04), rgba(108, 63, 255, 0.02));
   --gradient-hero-overlay: radial-gradient(ellipse at 30% 50%, rgba(0, 128, 255, 0.05) 0%, transparent 60%),
                            radial-gradient(ellipse at 70% 80%, rgba(108, 63, 255, 0.03) 0%, transparent 50%);
+
+  /* Mesh */
+  --mesh-color-1: rgba(0, 128, 255, 0.06);
+  --mesh-color-2: rgba(108, 63, 255, 0.04);
+  --mesh-color-3: rgba(0, 200, 255, 0.03);
+
+  /* Dot grid */
+  --dot-color: rgba(0, 128, 255, 0.06);
+
+  /* Noise */
+  --noise-opacity: 0.02;
+
+  /* Bento overrides */
+  --bento-card-bg: rgba(255, 255, 255, 0.6);
+  --bento-card-border: rgba(0, 128, 255, 0.08);
+  --bento-card-hover-border: rgba(0, 128, 255, 0.2);
+  --bento-card-hover-glow: 0 0 40px rgba(0, 128, 255, 0.06), 0 8px 32px rgba(0, 0, 0, 0.06);
+
+  /* Cursor glow */
+  --cursor-glow-opacity: 0.04;
 }

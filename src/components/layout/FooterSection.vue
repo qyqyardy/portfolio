@@ -54,19 +54,19 @@ const currentYear = new Date().getFullYear()
 .footer-socials {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .footer-socials a {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--bento-card-bg);
+  border: 1px solid var(--bento-card-border);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--text-secondary);
   transition: var(--transition);
   text-decoration: none;
