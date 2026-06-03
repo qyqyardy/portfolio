@@ -97,7 +97,7 @@ import { onMounted, onUnmounted } from 'vue'
 import TypeWriter from '../ui/TypeWriter.vue'
 import AnimatedCounter from '../ui/AnimatedCounter.vue'
 
-const cvUrl = '/Lazwardi Rizki Assidiq - CV.pdf'
+const cvUrl = '/Lazwardi-Rizki-Assidiq-CV.pdf'
 const cvFileName = 'Lazwardi Rizki Assidiq - CV.pdf'
 
 function scrollTo(id) {

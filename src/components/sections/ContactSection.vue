@@ -64,7 +64,7 @@
 <script setup>
 import SectionHeader from '../ui/SectionHeader.vue'
 
-const cvUrl = '/Lazwardi Rizki Assidiq - CV.pdf'
+const cvUrl = '/Lazwardi-Rizki-Assidiq-CV.pdf'
 const cvFileName = 'Lazwardi Rizki Assidiq - CV.pdf'
 </script>
 
