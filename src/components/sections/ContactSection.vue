@@ -52,7 +52,7 @@
           </div>
           <h3>{{ $t('contact.downloadCv') }}</h3>
           <p>{{ $t('contact.downloadCvDesc') }}</p>
-          <a :href="cvUrl" class="btn btn--primary" download>
+          <a :href="cvUrl" class="btn btn--primary" :download="cvFileName">
             <i class="fas fa-download"></i> {{ $t('contact.downloadBtn') }}
           </a>
         </div>
@@ -65,6 +65,7 @@
 import SectionHeader from '../ui/SectionHeader.vue'
 
 const cvUrl = '/Lazwardi Rizki Assidiq - CV.pdf'
+const cvFileName = 'Lazwardi Rizki Assidiq - CV.pdf'
 </script>
 
 <style scoped>

@@ -36,7 +36,7 @@
             <a href="#projects" class="btn btn--primary" @click.prevent="scrollTo('projects')">
               <i class="fas fa-briefcase"></i> {{ $t('hero.viewWork') }}
             </a>
-            <a :href="cvUrl" class="btn btn--outline" download>
+            <a :href="cvUrl" class="btn btn--outline" :download="cvFileName">
               <i class="fas fa-download"></i> {{ $t('hero.downloadCv') }}
             </a>
           </div>
@@ -98,6 +98,7 @@ import TypeWriter from '../ui/TypeWriter.vue'
 import AnimatedCounter from '../ui/AnimatedCounter.vue'
 
 const cvUrl = '/Lazwardi Rizki Assidiq - CV.pdf'
+const cvFileName = 'Lazwardi Rizki Assidiq - CV.pdf'
 
 function scrollTo(id) {
   const el = document.getElementById(id)
