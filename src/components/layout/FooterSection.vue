@@ -10,7 +10,7 @@
         </p>
         <div class="footer-socials">
           <a href="mailto:comvertzone@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://linkedin.com/in/lrassidiq" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.linkedin.com/in/lrassidiq" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           <a href="https://github.com/qyqyardy" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </div>

@@ -22,13 +22,13 @@
         </a>
 
         <!-- LinkedIn card -->
-        <a href="https://linkedin.com/in/lrassidiq" target="_blank" rel="noopener" class="bento-card contact-card" data-aos="fade-up" data-aos-delay="80">
+        <a href="https://www.linkedin.com/in/lrassidiq" target="_blank" rel="noopener" class="bento-card contact-card" data-aos="fade-up" data-aos-delay="80">
           <div class="contact-card-icon linkedin">
             <i class="fab fa-linkedin-in"></i>
           </div>
           <div class="contact-card-info">
             <h3>LinkedIn</h3>
-            <p>linkedin.com/in/lrassidiq</p>
+            <p>www.linkedin.com/in/lrassidiq</p>
           </div>
           <span class="contact-card-arrow"><i class="fas fa-arrow-right"></i></span>
         </a>
